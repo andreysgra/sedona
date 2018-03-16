@@ -7,6 +7,227 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo main-nav__logo">
+          <img class="logo__image" src="img/logo-sedona.svg" alt="Логотип Седоны" width="138" height="70">
+        </a>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Информация</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Карта штата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__intro">
+        <img class="page-main__logo" src="img/text-sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+      </div>
+
+      <header class="page-main__header">
+        <h1 class="visually-hidden">Седона — городок в Аризоне</h1>
+
+        <b class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
+      </header>
+
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+
+        <div class="features__main">
+          <div class="features__description">
+            <h3 class="features__title features__title--main">Настоящий городок</h3>
+            <p class="features__number">— №1 —</p>
+            <p class="features__text">Седона не аттракцион для&nbsp;туристов, там течет&nbsp;своя жизнь</p>
+          </div>
+
+          <div class="features__image-wrapper">
+            <img class="features__image" src="img/main-city.jpg" alt="Вид на город Седона">
+          </div>
+        </div>
+
+        <div class="advices">
+          <div class="advices__item advices__item--house">
+            <b class="advices__title">Жилье</b>
+            <p class="advices__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+
+          <div class="advices__item advices__item--burger">
+            <b class="advices__title">Еда</b>
+            <p class="advices__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
+          </div>
+
+          <div class="advices__item advices__item--gift">
+            <b class="advices__title">Сувениры</b>
+            <p class="advices__text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+
+        <div class="features__main features__main--reverse">
+          <div class="features__description">
+            <h3 class="features__title features__title--main">Там есть мост&nbsp;дьявола</h3>
+            <p class="features__number">— №2 —</p>
+            <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+
+          <div class="features__image-wrapper">
+            <img class="features__image" src="img/main-bridge.jpg" alt="Вид на мост дьявола">
+          </div>
+        </div>
+
+        <div class="features__additional features-additional">
+          <div class="features-additional__item">
+            <h3 class="features__title">Небольшая площадь</h3>
+            <p class="features__number">— №3 —</p>
+            <p class="features__text">Все интересные места находятся очень близко</p>
+          </div>
+
+          <div class="features-additional__item">
+            <h3 class="features__title">Красивая дорога</h3>
+            <p class="features__number">— №4 —</p>
+            <p class="features__text">Ехать в седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+          </div>
+
+          <div class="features-additional__item">
+            <h3 class="features__title">Мало туристов</h3>
+            <p class="features__number">— №5 —</p>
+            <p class="features__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-hotel">
+        <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+
+        <b class="search-hotel__title">Заинтересовались?</b>
+
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
+
+        <button class="button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
+
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-search__input-block">
+            <label class="form-search__label" for="arrival">Дата заезда:</label>
+
+            <div class="form-search__input-wrapper">
+              <input class="form-search__input-text" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+
+              <button class="form-search__calendar" type="button" aria-label="Календарь">
+                <svg class="social-links__icon" width="21" height="22">
+                  <use xlink:href="img/symbols.svg#icon-calendar.svg"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-search__input-block">
+            <label class="form-search__label" for="departure">Дата выезда:</label>
+
+            <div class="form-search__input-wrapper">
+              <input class="form-search__input-text" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+
+              <button class="form-search__calendar" type="button" aria-label="Календарь">
+                <svg class="social-links__icon" width="21" height="22">
+                  <use xlink:href="img/symbols.svg#icon-calendar.svg"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-search__input-block">
+            <div class="search-form-quantity">
+              <label class="form-search__label" for="adults">Взрослые:</label>
+
+              <button class="form-search__button form-search__button--minus" type="button">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+
+              <input class="form-search__input-text" type="text" name="adults" id="adults" value="2">
+
+              <button class="form-search__button form-search__button--plus" type="button">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+
+            <div class="search-form-quantity">
+              <label class="form-search__label" for="children">Дети:</label>
+
+              <button class="form-search__button form-search__button--minus" type="button">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+
+              <input class="form-search__input-text" type="text" name="children" id="children" value="0">
+
+              <button class="form-search__button form-search__button--plus" type="button">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="button form-search__submit" type="submit">Найти</button>
+        </form>
+      </section>
+
+      <section class="page-main__map map">
+        <h2 class="visually-hidden">Карта</h2>
+
+        <div class="map__interactive" id="map"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__column">
+        <b class="page-footer__hashtag">#visitsedona</b>
+      </div>
+
+      <div class="page-footer__column">
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
+              <svg class="social-links__icon" width="17" height="15">
+                <use xlink:href="img/symbols.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
+              <svg class="social-links__icon" width="12" height="22">
+                <use xlink:href="img/symbols.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://www.youtube.com" aria-label="Youtube">
+              <svg class="social-links__icon" width="20" height="16">
+                <use xlink:href="img/symbols.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__column">
+        <span class="page-footer__copyright-text">Website by</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg class="page-footer__copyright-icon" width="115" height="41">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
 
   <script src="js/index.min.js"></script>
 </body>

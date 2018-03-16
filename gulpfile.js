@@ -59,12 +59,10 @@ gulp.task('style', function () {
   const less = require('gulp-less');
   const postcss = require('gulp-postcss');
   const autoprefixer = require('autoprefixer');
-  const mqpacker = require('css-mqpacker');
   const csso = require('gulp-csso');
 
   let plugins = [
-    autoprefixer(),
-    mqpacker({sort: true})
+    autoprefixer()
   ];
 
   console.log('Компиляция стилей...');

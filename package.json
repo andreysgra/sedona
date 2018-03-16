@@ -2,7 +2,7 @@
   "name": "sedona",
   "version": "1.0.0",
   "description": "Проект «Седона» от HTML Academy",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "stylelint": "stylelint src/less/**/*.less --syntax less",
     "test": "gulp lintspaces && npm run stylelint",

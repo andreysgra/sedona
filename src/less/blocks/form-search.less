@@ -1,9 +1,22 @@
 .form-search {
+  visibility: hidden;
   padding: 56px;
   box-sizing: border-box;
   text-align: left;
   background-color: @white;
   .ps-drop-shadow(#000101; 15%; 90deg; 7px; 0; 15px);
+
+  &--visible {
+    animation: show 0.75s forwards;
+  }
+
+  &--hidden {
+    animation: hide 0.75s forwards;
+  }
+
+  &--opened {
+    visibility: visible;
+  }
 }
 
 .form-search__input-block {

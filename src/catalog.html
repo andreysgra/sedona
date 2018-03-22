@@ -6,12 +6,12 @@
   <title>Поиск отелей в Седоне</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <a class="logo main-nav__logo" href="index.html">
-          <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="138" height="70">
+          <img class="logo__image" src="img/logo-sedona.png" alt="Логотип Седоны" width="138" height="70">
         </a>
 
         <ul class="main-nav__list">
@@ -24,8 +24,8 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Карта штата</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Гостиницы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -91,13 +91,9 @@
               <div class="form-filters__range-bar"></div>
             </div>
 
-            <button class="form-filters__range-handle form-filters__range-handle--min" type="button">
-              <span class="visually-hidden">Минимально</span>
-            </button>
+            <button class="form-filters__range-handle form-filters__range-handle--min" type="button" aria-label="Минимально"></button>
 
-            <button class="form-filters__range-handle form-filters__range-handle--max" type="button">
-              <span class="visually-hidden">Максимально</span>
-            </button>
+            <button class="form-filters__range-handle form-filters__range-handle--max" type="button" aria-label="Максимально"></button>
           </div>
 
           <button class="form-filters__button" type="submit">Показать</button>
@@ -116,8 +112,8 @@
             <p class="catalog__sort-text">Сортировка:</p>
 
             <ul class="catalog__sort-type sort-type">
-              <li class="sort-type__item sort-type__item--active">
-                <a class="sort-type__link">По цене</a>
+              <li class="sort-type__item">
+                <a class="sort-type__link sort-type__link--active">По цене</a>
               </li>
               <li class="sort-type__item">
                 <a class="sort-type__link" href="#">По типу</a>
@@ -130,17 +126,17 @@
 
           <ul class="catalog__sort-direction sort-direction">
             <li class="sort-direction__item">
-              <a class="sort-direction__link sort-direction__link--ascending" href="#" aria-label="Вверх"></a>
+              <a class="sort-direction__link" href="#" aria-label="Вверх"></a>
             </li>
-            <li class="sort-direction__item sort-direction__item--active">
-              <a class="sort-direction__link sort-direction__link--descending" aria-label="Вниз"></a>
+            <li class="sort-direction__item">
+              <a class="sort-direction__link sort-direction__link--descending sort-direction__link--active" aria-label="Вниз"></a>
             </li>
           </ul>
         </header>
 
         <article class="hotel">
           <figure class="hotel__image-wrapper">
-            <img class="hotel__image" src="img/photo-01.jpg" alt="Amara Resort & Spa">
+            <img class="hotel__image" src="img/photo-01.jpg" width="135" height="90" alt="Amara Resort & Spa">
           </figure>
 
           <div class="hotel__description-wrapper">
@@ -152,19 +148,19 @@
               <div class="hotel__info">
                 <p class="hotel__text">Гостиница</p>
 
-                <a href="#" class="hotel__button button">Подробнее</a>
+                <a href="#" class="hotel__button button button--blue">Подробнее</a>
               </div>
 
               <div class="hotel__booking">
                 <p class="hotel__text">От 4000 р.</p>
 
-                <a href="#" class="hotel__button button">Забронировать</a>
+                <a href="#" class="hotel__button button button--brown">Забронировать</a>
               </div>
             </div>
           </div>
 
           <div class="hotel__rating">
-            <div class="hotel__stars"></div>
+            <div class="hotel__stars hotel__stars--four"></div>
 
             <p class="hotel__rating-text">Рейтинг: 8,5</p>
           </div>
@@ -172,7 +168,7 @@
 
         <article class="hotel">
           <figure class="hotel__image-wrapper">
-            <img class="hotel__image" src="img/photo-02.jpg" alt="Desert Quail Inn">
+            <img class="hotel__image" src="img/photo-02.jpg" width="135" height="90" alt="Desert Quail Inn">
           </figure>
 
           <div class="hotel__description-wrapper">
@@ -184,19 +180,19 @@
               <div class="hotel__info">
                 <p class="hotel__text">Мотель</p>
 
-                <a href="#" class="hotel__button button">Подробнее</a>
+                <a href="#" class="hotel__button button button--blue">Подробнее</a>
               </div>
 
               <div class="hotel__booking">
                 <p class="hotel__text">От 3000 р.</p>
 
-                <a href="#" class="hotel__button button">Забронировать</a>
+                <a href="#" class="hotel__button button button--brown">Забронировать</a>
               </div>
             </div>
           </div>
 
           <div class="hotel__rating">
-            <div class="hotel__stars"></div>
+            <div class="hotel__stars hotel__stars--three"></div>
 
             <p class="hotel__rating-text">Рейтинг: 8,9</p>
           </div>
@@ -204,7 +200,7 @@
 
         <article class="hotel">
           <figure class="hotel__image-wrapper">
-            <img class="hotel__image" src="img/photo-03.jpg" alt="Villas at Poco Diablo">
+            <img class="hotel__image" src="img/photo-03.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </figure>
 
           <div class="hotel__description-wrapper">
@@ -216,19 +212,19 @@
               <div class="hotel__info">
                 <p class="hotel__text">Апартаменты</p>
 
-                <a href="#" class="hotel__button button">Подробнее</a>
+                <a href="#" class="hotel__button button button--blue">Подробнее</a>
               </div>
 
               <div class="hotel__booking">
                 <p class="hotel__text">От 2000 р.</p>
 
-                <a href="#" class="hotel__button button">Забронировать</a>
+                <a href="#" class="hotel__button button button--brown">Забронировать</a>
               </div>
             </div>
           </div>
 
           <div class="hotel__rating">
-            <div class="hotel__stars"></div>
+            <div class="hotel__stars hotel__stars--two"></div>
 
             <p class="hotel__rating-text">Рейтинг: 9,2</p>
           </div>
@@ -244,21 +240,21 @@
       <div class="page-footer__column">
         <ul class="social-links">
           <li class="social-links__item">
-            <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
+            <a class="button button--blue social-links__link" href="https://twitter.com" aria-label="Twitter">
               <svg class="social-links__icon" width="17" height="15">
                 <use xlink:href="img/symbols.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
+            <a class="button button--blue social-links__link" href="https://www.facebook.com" aria-label="Facebook">
               <svg class="social-links__icon" width="12" height="22">
                 <use xlink:href="img/symbols.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link" href="https://www.youtube.com" aria-label="Youtube">
+            <a class="button button--blue social-links__link" href="https://www.youtube.com" aria-label="Youtube">
               <svg class="social-links__icon" width="20" height="16">
                 <use xlink:href="img/symbols.svg#icon-youtube"></use>
               </svg>

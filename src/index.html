@@ -6,12 +6,12 @@
   <title>Седона — небольшой городок в Аризоне</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <a class="logo main-nav__logo">
-          <img class="logo__image" src="img/logo-sedona.svg" alt="Логотип Седоны" width="138" height="70">
+          <img class="logo__image" src="img/logo-sedona.png" alt="Логотип Седоны" width="138" height="70">
         </a>
 
         <ul class="main-nav__list">
@@ -33,7 +33,7 @@
 
     <main class="page-main">
       <div class="page-main__intro">
-        <img class="page-main__logo" src="img/text-sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        <img class="page-main__logo" src="img/logo-intro.png" width="458" height="352" alt="Добро пожаловать в Седону">
       </div>
 
       <header class="page-main__header">
@@ -49,60 +49,60 @@
         <div class="features__main">
           <div class="features__description">
             <h3 class="features__title features__title--main">Настоящий городок</h3>
-            <p class="features__number">— №1 —</p>
-            <p class="features__text">Седона не аттракцион для&nbsp;туристов, там течет&nbsp;своя жизнь</p>
+            <p class="features__number">&ndash; №1 &ndash;</p>
+            <p class="features__text">Седона — не аттракцион для&nbsp;туристов, там&nbsp;течет своя жизнь</p>
           </div>
 
           <div class="features__image-wrapper">
-            <img class="features__image" src="img/main-city.jpg" alt="Вид на город Седона">
+            <img class="features__image" src="img/main-city.jpg" width="800" height="400" alt="Вид на город Седона">
           </div>
         </div>
 
-        <div class="advices">
-          <div class="advices__item advices__item--house">
+        <ul class="advices">
+          <li class="advices__item advices__item--house">
             <b class="advices__title">Жилье</b>
             <p class="advices__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
+          </li>
 
-          <div class="advices__item advices__item--burger">
+          <li class="advices__item advices__item--burger">
             <b class="advices__title">Еда</b>
             <p class="advices__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
-          </div>
+          </li>
 
-          <div class="advices__item advices__item--gift">
+          <li class="advices__item advices__item--gift">
             <b class="advices__title">Сувениры</b>
             <p class="advices__text">Не только китайского, но и местного производства!</p>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div class="features__main features__main--reverse">
           <div class="features__description">
             <h3 class="features__title features__title--main">Там есть мост&nbsp;дьявола</h3>
-            <p class="features__number">— №2 —</p>
+            <p class="features__number">&ndash; №2 &ndash;</p>
             <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
 
           <div class="features__image-wrapper">
-            <img class="features__image" src="img/main-bridge.jpg" alt="Вид на мост дьявола">
+            <img class="features__image" src="img/main-bridge.jpg" width="800" height="400" alt="Вид на мост дьявола">
           </div>
         </div>
 
         <div class="features__additional features-additional">
           <div class="features-additional__item">
             <h3 class="features__title">Небольшая площадь</h3>
-            <p class="features__number">— №3 —</p>
-            <p class="features__text">Все интересные места находятся очень близко</p>
+            <p class="features__number">&ndash; №3 &ndash;</p>
+            <p class="features__text">Все достопримечательности находятся очень близко</p>
           </div>
 
           <div class="features-additional__item">
             <h3 class="features__title">Красивая дорога</h3>
-            <p class="features__number">— №4 —</p>
+            <p class="features__number">&ndash; №4 &ndash;</p>
             <p class="features__text">Ехать в седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </div>
 
           <div class="features-additional__item">
             <h3 class="features__title">Мало туристов</h3>
-            <p class="features__number">— №5 —</p>
+            <p class="features__number">&ndash; №5 &ndash;</p>
             <p class="features__text">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
@@ -113,81 +113,71 @@
 
         <b class="search-hotel__title">Заинтересовались?</b>
 
-        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-        <button class="button search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button button--brown search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
 
-        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form-search search-hotel__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-search__input-block">
             <label class="form-search__label" for="arrival">Дата заезда:</label>
 
-            <div class="form-search__input-wrapper">
-              <input class="form-search__input-text" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+            <input class="form-search__input-text" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017" required>
 
-              <button class="form-search__calendar" type="button" aria-label="Календарь">
-                <svg class="social-links__icon" width="21" height="22">
-                  <use xlink:href="img/symbols.svg#icon-calendar.svg"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="form-search__calendar" type="button" aria-label="Календарь">
+              <svg class="form-search__calendar-icon" width="21" height="22">
+                <use xlink:href="img/symbols.svg#icon-calendar"></use>
+              </svg>
+            </button>
           </div>
 
           <div class="form-search__input-block">
             <label class="form-search__label" for="departure">Дата выезда:</label>
 
-            <div class="form-search__input-wrapper">
-              <input class="form-search__input-text" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+            <input class="form-search__input-text" type="text" name="departure" id="departure" placeholder="4 июля 2017" required>
 
-              <button class="form-search__calendar" type="button" aria-label="Календарь">
-                <svg class="social-links__icon" width="21" height="22">
-                  <use xlink:href="img/symbols.svg#icon-calendar.svg"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="form-search__calendar" type="button" aria-label="Календарь">
+              <svg class="form-search__calendar-icon" width="21" height="22">
+                <use xlink:href="img/symbols.svg#icon-calendar"></use>
+              </svg>
+            </button>
           </div>
 
           <div class="form-search__input-block">
-            <div class="search-form-quantity">
+            <div class="form-search__quantity">
               <label class="form-search__label" for="adults">Взрослые:</label>
 
-              <button class="form-search__button form-search__button--minus" type="button">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
+              <button class="form-search__button form-search__button--minus" type="button" aria-label="Уменьшить"></button>
 
-              <input class="form-search__input-text" type="text" name="adults" id="adults" value="2">
+              <input class="form-search__input-text form-search__input-number" type="text" name="adults" id="adults" placeholder="2" required>
 
-              <button class="form-search__button form-search__button--plus" type="button">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
+              <button class="form-search__button form-search__button--plus" type="button" aria-label="Увеличить"></button>
             </div>
 
-            <div class="search-form-quantity">
-              <label class="form-search__label" for="children">Дети:</label>
+            <div class="form-search__quantity">
+              <label class="form-search__label form-search__label--children" for="children">Дети:</label>
 
-              <button class="form-search__button form-search__button--minus" type="button">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
+              <button class="form-search__button form-search__button--minus" type="button" aria-label="Уменьшить"></button>
 
-              <input class="form-search__input-text" type="text" name="children" id="children" value="0">
+              <input class="form-search__input-text form-search__input-number" type="text" name="children" id="children" placeholder="0">
 
-              <button class="form-search__button form-search__button--plus" type="button">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
+              <button class="form-search__button form-search__button--plus" type="button" aria-label="Увеличить"></button>
             </div>
           </div>
 
-          <button class="button form-search__submit" type="submit">Найти</button>
+          <button class="button button--blue form-search__submit" type="submit">Найти</button>
         </form>
       </section>
 
-      <section class="page-main__map map">
+      <section class="map page-main__map">
         <h2 class="visually-hidden">Карта</h2>
+
+        <img class="map__image" src="img/bg-map.jpg" width="1280" height="747" alt="Карта местности">
 
         <div class="map__interactive" id="map"></div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <div class="page-footer__column">
         <b class="page-footer__hashtag">#visitsedona</b>
       </div>
@@ -195,21 +185,21 @@
       <div class="page-footer__column">
         <ul class="social-links">
           <li class="social-links__item">
-            <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
+            <a class="button button--blue social-links__link" href="https://twitter.com" aria-label="Twitter">
               <svg class="social-links__icon" width="17" height="15">
                 <use xlink:href="img/symbols.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
+            <a class="button button--blue social-links__link" href="https://www.facebook.com" aria-label="Facebook">
               <svg class="social-links__icon" width="12" height="22">
                 <use xlink:href="img/symbols.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link" href="https://www.youtube.com" aria-label="Youtube">
+            <a class="button button--blue social-links__link" href="https://www.youtube.com" aria-label="Youtube">
               <svg class="social-links__icon" width="20" height="16">
                 <use xlink:href="img/symbols.svg#icon-youtube"></use>
               </svg>

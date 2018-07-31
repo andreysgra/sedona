@@ -1,4 +1,5 @@
 # Проект «Седона» от [HTML Academy](https://htmlacademy.ru/)
+
 [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Вёрстка: [Андрей Грачев](https://github.com/andreysgra/)
@@ -18,8 +19,7 @@
 
 **Файлы:**
 
-- [Specification.md](Specification.md) — техническое задание проекта.
-
+* [Specification.md](Specification.md) — техническое задание проекта.
 
 [travis-image]: https://travis-ci.org/andreysgra/sedona.svg?branch=master
 [travis-url]: https://travis-ci.org/andreysgra/sedona

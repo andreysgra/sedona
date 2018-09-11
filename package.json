@@ -1,6 +1,6 @@
 {
   "name": "sedona",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Проект «Седона» от HTML Academy",
   "main": "index.html",
   "scripts": {
@@ -21,33 +21,50 @@
   },
   "homepage": "https://github.com/andreysgra/sedona#readme",
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
-    "browser-sync": "^2.23.6",
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.7",
+    "css-mqpacker": "^7.0.0",
     "del": "^3.0.0",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-less": "^3.5.0",
-    "gulp-lintspaces": "^0.5.0",
+    "gulp-less": "^4.0.1",
+    "gulp-lintspaces": "^1.0.0",
     "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-svgstore": "^6.1.1",
-    "gulp-uglify": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgstore": "^7.0.0",
+    "gulp-uglify": "^3.0.1",
     "imagemin-jpegoptim": "^5.2.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0"
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0",
     "svg4everybody": "^2.1.9"
   },
   "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ]
+    "defaults"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "defaults"
+            ]
+          }
+        }
+      ]
+    ]
+  }
 }

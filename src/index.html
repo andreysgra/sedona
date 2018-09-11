@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Седона — небольшой городок в Аризоне</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="page">
   <div class="page-wrapper">
     <header class="page-header">
@@ -113,11 +115,12 @@
 
         <b class="search-hotel__title">Заинтересовались?</b>
 
-        <p class="search-hotel__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-        <button class="button button--brown search-hotel__button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button button--brown search-hotel__button" type="button" id="search-button">Поиск гостиницы в Седоне</button>
 
-        <form class="form-search form-search--opened search-hotel__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form-search search-hotel__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-search__input-block">
             <label class="form-search__label" for="arrival">Дата заезда:</label>
 
@@ -219,7 +222,10 @@
     </footer>
   </div>
 
+  <script src="js/svg4everybody.min.js"></script>
   <script src="js/index.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_u0BSQX8x7uvZvW1cKeZuCPIIkXr6EcM&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_u0BSQX8x7uvZvW1cKeZuCPIIkXr6EcM&callback=initMap" async
+    defer></script>
 </body>
+
 </html>
